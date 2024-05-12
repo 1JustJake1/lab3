@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Game store <i class="fa fa-gamepad"></i></h1>
+    <style>
+        body {
+            background-image: url(https://wallpapers.com/images/hd/gamestop-background-76fwaekfal41pd58.jpg);
+        }
+        </style>
+        <div id="subscriptionOffer" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 9999;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgb(14, 233, 215); padding: 20px; border-radius: 5px;">
+                <p>Хочете підписатися на розсилку?</p>
+                <button id="acceptButton">Прийняти</button>
+                <button id="rejectButton">Відхилити</button>
+            </div>
+        </div>
+    <div class="navbar" id="navbar">
+        <h1> </h1>
+    </div>
+    <button onclick="loadProducts('Екшен')">Екшен</button>
+    <button onclick="loadProducts('Жахи')">Хоррор</button>
+    <button onclick="loadProducts('Стратегія')">Стратегії</button>
+    <button onclick="loadProducts('кошик')">Кошик</button>
+
+    <div class="container" id="container">
+
+
+    </div>
+
+   <div id="modal-overlay"></div>
+
+<div id="modal">
+    <div id="close-btn">Закрити (5)</div>
+    <h2>Advertisement</h2>
+    <img src="/media/pari_match_logo.jpg" alt="pari_match_logo.jpg" style="max-width: 100%; height: auto;">
+    <p>Тут може бути ваша реклама</p>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
